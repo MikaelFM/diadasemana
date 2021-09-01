@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            now = new Date
+            var x = now.getDay();
+            var hora = now.getHours();
+            var minuto = now.getMinutes();
+            const ingles = '';
+            const sociologia = '';
+            const historia = 'https://meet.google.com/xks-fhea-rvo';
+            const matematica = 'https://meet.google.com/xbn-tyzt-dtr';
+            const dw = '';
+            const quimica = '';
+            const domingo = 0;
+            const segunda = 1;
+            const terca = 2;
+            const quarta = 3;
+            const quinta = 4;
+            const sexta = 5;
+            const sabado = 6;
+            
+            if (x == domingo){
+                window.alert("hoje não tem aula!")
+            }
+
+            else if(x == segunda){
+                window.location.href = '#'
+            }
+            
+            else if(x == terca){
+                window.location.href = '#'
+            }
+            
+            else if(x == quarta){
+                if (hora >= 15 && minuto > 10){
+                    window.location.href = matematica
+                } else {
+                    window.location.href = historia
+                }
+            }
+            
+            else if(x == quinta){
+                window.location.href = '#'
+            }
+            
+            else if(x == sexta){
+                window.location.href = '#'
+            }
+            
+            else if(x == sabado){
+                window.alert("hoje não tem aula!")
+            }
+                  
+        </script>
+    </body>
+</html>
